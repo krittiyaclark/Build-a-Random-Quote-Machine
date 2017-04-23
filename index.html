@@ -9,6 +9,7 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
+  <!-- Stylesheet -->
   <link rel="stylesheet" href="style.css">
 
   <!-- Bootstrap -->
@@ -26,13 +27,28 @@
   <!-- font-awesome -->
   <link rel="stylesheet" href="font-awesome/css/font-awesome.min.css"/>
 
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-
 </head>
 
 <body>
 
+  <div id="background" class="container">
+    <div id="quote_container"class="row">
+      <div class="col-md-10">
+        <div id="quote_slider"></div><!-- #quote_slider -->
+      </div><!-- .col-md-10 -->
+      <div class="col-md-2">
+        <div class="buttons">
+          <button onclick="newQuote()" class="button btn btn-info">New quote</button>
+          <a class="button text-center twitter-share-button"
+  href="https://twitter.com/intent/tweet"><i class="fa fa-twitter"></i></a>
+          </a>
+        </div><!-- .buttons -->
+      </div><!-- .col-md-2 -->
+    </div><!-- #quote_container .row -->
+  </div><!-- #background .container -->
 
-
+  <!-- Scripts -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="javaScript.js"></script>
 </body>
 </html>
