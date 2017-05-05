@@ -10,12 +10,10 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
   <!-- Stylesheet -->
-  <link rel="stylesheet" href="style.css">
-
-  <!-- Bootstrap -->
-    <link href="bootstrap/css/bootstrap.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css"
-    <script src="bootstrap/css/bootstrap.min.js">
+  <!-- Latest compiled and minified CSS -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="main.css">
 
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -24,31 +22,43 @@
       <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
     <![endif]-->
 
-  <!-- font-awesome -->
-  <link rel="stylesheet" href="font-awesome/css/font-awesome.min.css"/>
-
 </head>
 
 <body>
 
   <div id="background" class="container">
     <div id="quote_container"class="row">
-      <div class="col-md-10">
-        <div id="quote_slider"></div><!-- #quote_slider -->
-      </div><!-- .col-md-10 -->
-      <div class="col-md-2">
-        <div class="buttons">
-          <button onclick="newQuote()" class="button btn btn-info">New quote</button>
-          <a class="button text-center twitter-share-button"
-  href="https://twitter.com/intent/tweet"><i class="fa fa-twitter"></i></a>
-          </a>
-        </div><!-- .buttons -->
-      </div><!-- .col-md-2 -->
+      <div class="col-md-12">
+        <h1>Random Quote Machine</h1>
+      </div><!-- .col-md-12 -->
+
+      <div class="row">
+        <div class="col-md-8 col-md-offset-2">
+          <div id="quote_slider">
+            <p id="quotation"></p>
+            <p id="author"></p>
+          </div><!-- #quote_slider -->
+
+          <ul class="list-inline">
+            <li>
+              <button href="#" class="btn btn-default btn-lg get-quote"><i class="fa fa-quote-left fa-fw"></i>New quote</button>
+            </li>
+            <li>
+              <button href="#" class="btn btn-default btn-lg share-quote"
+    href="#"><i class="fa fa-twitter fa-fw"></i>Tweet</button>
+            </li>
+          </ul>
+        </div><!-- col-md-8 col-md-offset-2 -->
+      </div><!-- .row -->
     </div><!-- #quote_container .row -->
   </div><!-- #background .container -->
 
   <!-- Scripts -->
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-  <script src="javaScript.js"></script>
+  <script
+  src="https://code.jquery.com/jquery-2.2.4.min.js"
+  integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44="
+  crossorigin="anonymous"></script>
+  <script src="main.js"></script>
+
 </body>
 </html>
